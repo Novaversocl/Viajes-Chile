@@ -1,0 +1,43 @@
+/* Reset de estilos para todos los elementos */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Estilos para la barra de navegación */
+nav {
+  background-color: #289ca8;
+}
+
+/* Estilos para el logotipo */
+#logo {
+  width: 40px;
+  height: 50px;
+}
+
+/* Estilos generales para el cuerpo de la página */
+body {
+  background-color: black;
+  font-family: "Lobster", sans-serif; /* Familia de fuente Lobster */
+}
+
+/* Estilos específicos para el texto del logotipo */
+.texto-logo {
+  margin-top: 10px;
+  font-family: "Lobster", sans-serif; /* Familia de fuente Lobster */
+  font-weight: 400; /* Peso de la fuente regular */
+  font-style: normal; /* Estilo de fuente normal */
+  font-size: 30px;
+}
+
+/* Estilos para imágenes con clase 'tamaño-modificable-2' */
+.tamaño-modificable-2 {
+  width: 100%;
+  height: 200px;
+}
+
+/* Clase 'hidden' para ocultar elementos */
+.hidden {
+  display: none;
+}
