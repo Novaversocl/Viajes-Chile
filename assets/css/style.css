@@ -41,3 +41,8 @@ body {
 .hidden {
   display: none;
 }
+
+.NombreFooter{
+
+  font-size: 25px;
+}

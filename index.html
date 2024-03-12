@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Juan Luis Estrada" />
 
-    <!-- bootstrap -->
+    <!-- bootstrap ----------------------------------------------------------------------------------------------->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
-    <!-- bootstrap -->
+    <!-- bootstrap ------------------------------------------------------------------------------------------------>
 
-    <!-- Fuentes google Font -->
+    <!-- Fuentes google Font -------------------------------------------------------------------------------------->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -27,11 +27,11 @@
       href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Lobster&display=swap"
       rel="stylesheet"
     />
-    <!-- Fuentes google Font -->
+    <!-- Fuentes google Font ---------------------------------------------------------------------------------------->
 
-    <!-- iconos -->
+    <!-- iconos awesome-------------------------------------------------------------------------------------------->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- iconos -->
+    <!-- iconos awesome-------------------------------------------------------------------------------------------->
 
     <!-- Estilo propio css -->
     <link rel="stylesheet" href="assets/css/style.css" />
@@ -41,18 +41,22 @@
   </head>
   <body>
 
-<!-- ---------------------------------------------------------------------------- -->
+<!--navbar---------------------------------------------------------------------------- -->
+
+<!-- py-0: Ajusta el espaciado vertical (padding) en el eje y (top y bottom) a cero. -->
 
     <nav class="navbar navbar-expand-lg navbar-dark py-0">
       <!-- Contenedor fluido para máxima anchura -->
       <div class="container-fluid px-lg-5">
         <a class="navbar-brand col-2" href="/">
           <h1 id="logo" class="display-1">
+            <!-- "display-1" se usa para un tamaño de texto grande -->
             <p class="texto-logo">
               <img id="logo" src="assets/img/viajes.svg" alt=""/>Viajes Chile
             </p>
           </h1>
         </a>
+        <!-- permitir la expansión y contracción de la barra de navegación en dispositivos móviles o pantallas más pequeñas -->
         <button
           class="navbar-toggler"
           type="button"
@@ -67,6 +71,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
+              <!-- Al hacer clic en los botones se usa el smooth scroll en donde esta por id y el destino es el section -->
               <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
             </li>
             <li class="nav-item">
@@ -83,10 +88,11 @@
       </div>
     </nav>
     
-    <!-- Navbar ------------------------------------------------------------->
+   <!--navbar------------------------------------------------------------------------------->
 
 
-    <!--header--------------------------------------------------------------------->
+
+    <!--header------------------------------------------------------------------------------>
     <header>
 
       <!-- carousel -->
@@ -96,6 +102,7 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="assets/img/carousel1.jpg" class="d-block w-100" alt="...">
+            <!-- d-block significa que cualquier contenido siguiente aparecerá en la línea siguiente. -->
           </div>
           <div class="carousel-item">
             <img src="assets/img/carousel2.jpg" class="d-block w-100" alt="...">
@@ -118,13 +125,19 @@
     </section>
 <!-- carousel -------------------------------------------------------------------------------------->
 
-<!---textos--------------------------------------------------------------------------------------->
+<!---textos----------------------------------------------------------------------------------------->
 <section id="quienes-somos">
-  <h1 class="text-center text-white">¿Quiénes Somos?</h1>
+  <h1 class="text-center text-white pt-3 pb-3">¿Quiénes Somos?</h1>
 
   <div class="container">
     <div class="row">
       <div class="col-sm-4 mb-3 mb-sm-0">
+
+      <!-- col-sm-4
+      Esto significa que en pantallas pequeñas, el elemento se ajustará para ocupar aproximadamente un tercio (4 de 12 columnas) 
+      del ancho total del contenedor principal. La configuración es responsive, lo que significa que en pantallas más grandes, 
+      el elemento podría ajustarse automáticamente para ocupar un número diferente de columnas -->
+
         <div class="card">
           <div class="card-body">
             
@@ -133,8 +146,6 @@
 
               <button class="btn btn-primary fa fa-plane "title="Boton 1" type="button"></button>
             
-
-             
             </div>
           </div>
         </div>
@@ -169,15 +180,28 @@
   </div>
 </section>
 
-<!-----textos------------------------------------------------------------------------------------->
+<!-----textos----------------------------------------------------------------------------------------->
 
 <!-----Destacados------------------------------------------------------------------------------------->
 <section id="destacados">
-  <h1 class="text-center text-white ">Destacados</h1>
+  <h1 class="text-center text-white pt-3 ">Destacados</h1>
 
   <div class="container  d-flex flex-lg-row flex-column align-items-center justify-content-center ">
 
     <div class="card col-12 col-lg-3 my-3 p-0 m-3">
+
+      <!-- col-12:
+      col: Indica que el elemento es parte de la rejilla y se comportará como una columna.
+      12: Especifica que, en pantallas de cualquier tamaño, el elemento ocupará las 12 columnas disponibles en la rejilla.
+       En otras palabras, el elemento se extenderá por todo el ancho del contenedor principal en dispositivos de cualquier tamaño.
+
+  col-lg-3:
+      col-lg-3: Indica que en pantallas de tamaño grande (large screens), el elemento ocupará 3 columnas de las 12 disponibles en la rejilla.
+       Esto significa que, en dispositivos con pantallas grandes, el elemento se ajustará para ocupar aproximadamente un cuarto del ancho total
+       del contenedor principal. -->
+
+
+
       <img src="assets/img/card1.jpg" class="card-img-top tamaño-modificable-2 img-fluid" alt="...">
       <div class="card-body bg-primary ">
         <h5 class="card-title p-2 toggle-content text-white">Congue fermentum dignissim</h5>
@@ -218,9 +242,9 @@
 
 
 
-<!-- Contacto-------------------------------------------------------------------------------------------- -->
+<!-- Contacto------------------------------------------------------------------------------------------>
 
-<h1 class="text-center text-white ">Contacto</h1>
+<h1 class="text-center text-white pt-3 ">Contacto</h1>
 
 <section id="contacto">
 
@@ -229,15 +253,15 @@
       <div class="col-12 col-md-6">
         <form id="miFormulario">
           <div class="form-group">
-            <label for="nombre">Nombre:</label>
+            <label class="text-white"  for="nombre">Nombre:</label>
             <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
           </div>
           <div class="form-group">
-            <label for="email">Correo electrónico:</label>
+            <label class="text-white" for="email">Correo electrónico:</label>
             <input type="text" class="form-control" id="email" placeholder="Ingrese su Mail">
           </div>
           <div class="form-group">
-            <label for="mensaje">Mensaje:</label>
+            <label class="text-white" for="mensaje">Mensaje:</label>
             <textarea class="form-control mb-2" id="mensaje" rows="4" placeholder="Ingrese su mensaje"></textarea>
           </div>
           <button type="submit" class="btn btn-primary mt-1">Enviar</button>
@@ -250,19 +274,19 @@
 </section>
 
 <br>
-<!-- Contacto-------------------------------------------------------------------------------------------- -->
+<!-- Contacto---------------------------------------------------------------------------------------------->
 
 
 
 
     </header>
-    <!---header-------------------------------------------------------------------->
+    <!---header-------------------------------------------------------------------------------------------->
 
-    <!----------------------------------------------------------------------->
-    <footer class="bg-dark text-white p-3">
+    <!--footer--------------------------------------------------------------------------------------------->
+    <footer class="bg-primary text-white p-3">
       
       <div class="d-flex">
-        <p class="">VIAJES CHILE</p>
+        <p class="NombreFooter">Viajes Chile</p>
 
       </div>
 
@@ -278,10 +302,10 @@
      
     </footer>
     
-    <!----------------------------------------------------------------------->
+    <!--footer--------------------------------------------------------------------------------------------->
 
     <!-- script -bootstrap-jquery -->
-    <!----------------------------------------------------------------------->
+    <!------------------------------------------------------------------------------------------------------>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
       integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
@@ -297,74 +321,9 @@ query.min.js"></script>
 
 
 
-    <!----------------------------------------------------------------------->
-    <!-- script -bootstrap-jquery -->
-
-    <script>
-      $(document).ready(function() {
-        // Manejo del clic en los enlaces del navbar
-        $('a.nav-link').on('click', function(event) {
-          if (this.hash !== '') {
-            event.preventDefault();
-            var hash = this.hash;
-      
-            // Desplazamiento suave a la posición del destino
-            $('html, body').animate({
-              scrollTop: $(hash).offset().top
-            }, 1000); // Duración de la animación en milisegundos (1 segundo en este caso)
-          }
-        });
-      });
-      </script>
-
-
-<script>
-  $(document).ready(function() {
-    // Manejo del clic en los botones con la clase 'btn-primary'
-    $('.btn-primary').on('click', function() {
-      // Encuentra el elemento padre (card-body) del botón actual
-      var cardBody = $(this).closest('.card-body');
-  
-      // Encuentra el párrafo dentro del card-body
-      var cardText = cardBody.find('.card-text');
-  
-      // Alterna la visibilidad del párrafo al hacer clic en el botón
-      cardText.toggleClass('hidden');
-    });
-  });
-  </script>
-  
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      var formulario = document.getElementById('miFormulario');
-    
-      formulario.addEventListener('submit', function (event) {
-        // Obtén los valores de los campos del formulario
-        var nombre = document.getElementById('nombre').value;
-        var email = document.getElementById('email').value;
-        var mensaje = document.getElementById('mensaje').value;
-    
-        // Realiza la validación (puedes agregar otras condiciones según tus requisitos)
-        if (nombre.trim() === '' || email.trim() === '' || mensaje.trim() === '') {
-          alert('Por favor, complete todos los campos.');
-          event.preventDefault(); // Evita que el formulario se envíe si la validación falla
-        } else {
-          // Simula el envío exitoso del formulario
-          alert('Mensaje enviado correctamente.');
-          
-          // Limpia los campos del formulario
-          document.getElementById('nombre').value = '';
-          document.getElementById('email').value = '';
-          document.getElementById('mensaje').value = '';
-          
-          event.preventDefault(); // Evita que el formulario se envíe
-        }
-      });
-    });
-    </script>
-    
-    
-      
+    <!----------------------------------------------------------------------------------------------------->
+    <!-- script con las funciones -->
+    <script src="assets/js/scripts.js"></script>
+    <!----------------------------------------------------------------------------------------------------->
   </body>
 </html>
